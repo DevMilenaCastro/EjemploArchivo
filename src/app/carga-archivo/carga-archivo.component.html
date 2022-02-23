@@ -1,0 +1,39 @@
+<section class="wompi-container">
+  <h5>Cargar insumo de wompi</h5>
+  <div class="wompi-container__principal">
+    <div class="wompi-container__principal--content">
+      <label for="file">Selecciona el archivo de wompi</label>
+      <p>Formatos aceptados: .csv</p>
+    </div>
+    <label for="btn-only" class="wompi-container__principal--btn-container">
+      Agregar archivo
+    </label>
+    <input
+      id="btn-only"
+      class="wompi-container__principal--btn-input"
+      (change)="onFileCharge($event)"
+      type="file"
+      accept=".csv"
+    />
+  </div>
+
+  <div *ngIf="loadedFile" class="wompi-container__mensaje-archivo">
+    <div class="wompi-container__mensaje-archivo--descripcion-archivo">
+      <label class="archivo">Archivo de Wompi</label>
+      <div class="load-container__file">
+        <div class="load-container__file-container">
+          <p class="load-container__file--texts-name">Nombre: {{ name }}</p>
+          <p class="load-container__file--texts-size">
+            Tamaño: {{ kbToMb(size) }} MB
+          </p>
+          <p class="load-container__file--texts-type">Tipo: {{ type }}</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button (click)="onFileLoad()" class="load-container__file--button-load">
+        Cargar
+      </button>
+    </div>
+  </div>
+</section>

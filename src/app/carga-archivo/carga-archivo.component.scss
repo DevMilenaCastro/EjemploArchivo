@@ -1,0 +1,96 @@
+.wompi-container {
+  align-items: flex-start;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 16px;
+  padding: 16px 16px 16px 32px;
+  h5 {
+    color: #000;
+    font-family: CIBFont Sans;
+    font-size: 20px;
+    letter-spacing: -0.375px;
+    line-height: 24px;
+  }
+  &__principal {
+    align-items: center;
+    display: flex;
+    &--content {
+      background-color: blue;
+      margin-right: 20px;
+      label {
+        font-weight: 600;
+      }
+    }
+    &--btn-container {
+      display: flex;
+      align-items: center;
+      border: 1px solid #2c2a29;
+      border: radius 50px;
+      color: #2c2a29;
+      cursor: pointer;
+      font-family: Open Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      height: 38px;
+      justify-content: center;
+      letter-spacing: -0.38px;
+      line-height: 21px;
+      margin-left: 30px;
+      outline: 0;
+      padding: 0px 16px;
+      text-align: center;
+      text-decoration: none;
+    }
+    &--btn-input {
+      display: none;
+    }
+  }
+
+  &__mensaje-archivo {
+    display: flex;
+    margin-top: 32px;
+    &--descripcion-archivo {
+      border-bottom: 4px solid #00c389;
+      display: flex;
+      flex-direction: column;
+      font-family: Open sans;
+      justify-content: space-between;
+      width: 440px;
+      .archivo {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: -0.3px;
+        color: #2c2a29;
+      }
+      .cargar-archivo {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.2px;
+        color: #03814a;
+      }
+    }
+    .cargar {
+      background-color: #fdda24;
+      border-radius: 60px;
+      border: 1px solid #fdda24;
+      cursor: pointer;
+      font-family: Open sans;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: -0.38px;
+      line-height: 21px;
+      outline: 0;
+      padding: 2px 20px;
+      text-align: center;
+      text-decoration: none;
+      height: 38px;
+    }
+  }
+}
